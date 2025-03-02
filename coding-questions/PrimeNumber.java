@@ -11,11 +11,11 @@ public class PrimeNumber {
         if(inp==0 || inp==1)
             return false;
 
-        if(inp == 2)
+        if(inp==2)
             return true;
 
-        for(int i=2; i<inp/2; i++){
-            if(inp % i == 0)
+        for(int i=2; i<=inp/2; i++){
+            if(inp%i==0)
                 return false;
         }
 
